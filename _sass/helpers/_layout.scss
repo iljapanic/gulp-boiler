@@ -1,0 +1,67 @@
+// BUILDING BLOCKS
+.l-main {
+	padding-left: $spacing;
+	padding-top: $spacing;
+	padding-right: $spacing;
+	padding-bottom: $spacing/2; 
+}
+
+.l-sidebar {
+	padding-left: $spacing;
+	padding-top: $spacing;
+	padding-right: $spacing;
+	padding-bottom: $spacing/2;
+}
+
+.l-footer {
+	padding-left: $spacing;
+	padding-top: $spacing;
+	padding-right: $spacing;
+	padding-bottom: $spacing;
+}
+
+
+@include MQ(M) {
+
+	.l-main {
+		float: left;
+		width: 70%;
+		padding-left: $spacing;
+		padding-top: $spacing;
+		padding-right: $spacing/2;
+		padding-bottom: $spacing/2;
+	}
+
+	.l-sidebar {
+		float: left;
+		width: 30%;
+		padding-left: $spacing/2;
+		padding-top: $spacing;
+		padding-right: $spacing;
+		padding-bottom: $spacing/2;
+
+		border-left: 2px solid $brand-medium;
+	}
+
+	.l-footer {
+		float: left;
+		width: 100%;
+		padding-left: $spacing;
+		padding-top: $spacing/2;
+		padding-right: $spacing;
+		padding-bottom: $spacing;
+		border-top: 2px solid $brand-medium;
+	}
+
+}
+
+
+// SECTIONS
+.header, .main, .sidebar, .footer {
+	width: 100%;
+	padding: $spacing/2;
+
+	@include MQ(M) {
+		padding: $spacing;
+	}
+}

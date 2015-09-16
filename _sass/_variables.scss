@@ -1,0 +1,40 @@
+// Colors based on Color Schemer (https://github.com/at-import/color-schemer)
+$cs-primary: #f8f8f2;
+$cs-scheme: mono;
+
+$green: #26A65B;
+$blue: #3498db;
+$purple: #9b59b6;
+$red: #C0392B;
+
+$brand-primary: cs-primary();
+$brand-secondary: $red;
+
+$brand-light: cs-primary();
+$brand-dark: shade($brand-light, 75);
+$brand-medium: shade($brand-light, 15%);
+$brand-dark-tint: tint($brand-dark, 35%); 
+
+
+
+// Modular scale (https://github.com/modularscale/modularscale-sass)
+$ms-base: 0.9em; // 16px
+$ms-ratio: $minor-third;
+
+// Base spacing
+$spacing: ms(1);
+$radius: 6px;
+
+// Media Queries
+$S: '(min-width:320px)';   
+$M: '(min-width:768px)';     
+$L: '(min-width:1024px)';
+
+
+// Font fallbacks
+$sans-serif: Helvetica, Arial, "Lucida Grande", sans-serif; // sans-serif fallback
+$serif: Garamond, Georgia, serif; // serif fallback
+
+// Font base
+$font-base: 'Lato';
+$font-header: 'Lato';
