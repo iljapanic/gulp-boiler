@@ -1,5 +1,7 @@
 # Project-related #
 ###########################
+assets/css/*.css
+assets/js/*.js
 
 
 # Development-related #
