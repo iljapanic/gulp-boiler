@@ -37,24 +37,24 @@ var path = {
 
 	// global directories
 
-	publicDir: './',
+	publicDir: './public',
 
-	assetsDir: './assets',
+	assetsDir: './public/assets',
 
 	// task-based directories
 	htmlSrc: './_html/**/**/*.html',
-	htmlDir: './',
+	htmlDir: './public',
 
 	markdownSrc: './_md/**/**/**.md',
 	markdownDir: './_html/texts',
 
 	sassSrc: './_sass/**/**/**/*.{sass,scss}',
-	sassDir: './assets/css',
+	sassDir: './public/assets/css',
 
 	jsSrc: './_js/**/**/**.js',
-	jsDir: './assets/js',
+	jsDir: './public/assets/js',
 
-	css: './assets/css/**/**.css'
+	css: './public/assets/css/**/**.css'
 
 };
 
@@ -150,7 +150,6 @@ gulp.task('js', function(){
 	return gulp.src(path.jsSrc)
 		.pipe(order([
 			"vendor/modernizr-2.8.3.min.js",
-			"vendor/classie.js",
 			"main.js"
 		]))
 		.pipe(concat("main.js"))
