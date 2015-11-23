@@ -1,189 +1,169 @@
-/////////////////////
-// MODULES IMPORT //
-///////////////////
-
-// Generic
-var browserSync = require('browser-sync');
+var source = require('vinyl-source-stream');
 var requireDir = require('require-dir');
+var browserify = require('browserify');
+var babelify = require('babelify');
+var watchify = require('watchify');
+var buffer = require('vinyl-buffer');
+var browserSync = require('browser-sync');
+var historyApiFallback = require('connect-history-api-fallback');
 
-
-// Gulp
 var gulp = require('gulp');
-
-var autoprefixer = require('gulp-autoprefixer');
+var gutil = require('gulp-util');
+var fileinclude	= require('gulp-file-include');
+var notify = require('gulp-notify');
 var cmq = require('gulp-combine-media-queries');
 var concat = require('gulp-concat');
-var fileinclude	= require('gulp-file-include');
-var markdown = require('gulp-markdown');
 var minifyCSS = require('gulp-minify-css');
-var notify = require('gulp-notify');
-var order = require('gulp-order');
-var plumber = require('gulp-plumber');
+var autoprefixer = require('gulp-autoprefixer');
+var imagemin = require('gulp-imagemin');
+var uglify = require('gulp-uglify');
+var rename = require('gulp-rename');
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
-var uglify = require('gulp-uglify');
-var util = require('gulp-util');
-var watch = require('gulp-watch');
+var markdown = require('gulp-markdown');
+
+var reload = browserSync.reload;
+
+function handleErrors() {
+  var args = Array.prototype.slice.call(arguments);
+  notify.onError({
+    title: 'Compile Error',
+    message: '<%= error.message %>'
+  }).apply(this, args);
+  this.emit('end'); // Keep gulp from hanging on this task
+}
 
 
-    
-
-////////////////////////
-// PROJECT VARIABLES //
-//////////////////////
-
-// Paths
-var path = {
-
-	// global directories
-
-	publicDir: './public',
-
-	assetsDir: './public/assets',
-
-	// task-based directories
-	htmlSrc: './_html/**/**/*.html',
-	htmlDir: './public',
-
-	markdownSrc: './_md/**/**/**.md',
-	markdownDir: './_html/texts',
-
-	sassSrc: './_sass/**/**/**/*.{sass,scss}',
-	sassDir: './public/assets/css',
-
-	jsSrc: './_js/**/**/**.js',
-	jsDir: './public/assets/js',
-
-	css: './public/assets/css/**/**.css'
-
-};
-
-
-
-//////////////////////////////
-// GULP - FUNCTIONAL TASKS //
-////////////////////////////
-
-// 'browser-sync'
-//
-// 	- spins up a local server
+/*
+	'browser-sync'
+*/
 
 gulp.task('browser-sync', function() {
-
-	browserSync.init({
-		server: {
-			baseDir: path.publicDir,
-			open: 'local',
-			host: 'localhost'
-		}
+	browserSync({
+		server: {baseDir: './dist/'},
+		middleware : [ historyApiFallback() ],
+    ghostMode: false
 	});
-
 });
 
 
+/*
+	'styles'
+*/
 
-// 'sass'
-// 
-//	- compiles SASS into CSS
-//	- creates SASS sourcemaps for easier debugging
-// 	- adds vendor prefixes
-//	- combines indetical media queries
-//	- minifies the CSS
+gulp.task('styles', function () {
+	gulp.src('_css/fonts/**.*')
+		.pipe(gulp.dest('./dist/css/fonts'))
 
-gulp.task('sass', function () {
-
-	return gulp.src(path.sassSrc)
-		.pipe(plumber())
+	gulp.src('_css/*.scss')
 		.pipe(sourcemaps.init())
-		.pipe(sass())
+		.pipe(sass().on('error', sass.logError))
+    .pipe(autoprefixer({
+      browsers: ['last 2 versions'],
+      cascade: false
+    }))
+    .pipe(cmq())
+    .pipe(minifyCSS({keepSpecialComments: '0'}))
 		.pipe(sourcemaps.write())
-		.pipe(autoprefixer({
-			browsers: ['last 2 versions'],
-			cascade: false
-        }))
-        .pipe(cmq())
-		.pipe(minifyCSS({keepSpecialComments: '0'}))
-		.pipe(gulp.dest(path.sassDir))
-		.pipe(browserSync.reload({stream:true}))
-
+		.pipe(gulp.dest('./dist/css/'))
+		.pipe(reload({stream:true}));
 });
 
 
-// 'markdown'
-//
-//	- compiles Markdown into HTML partials
+/*
+	'markdown'
+*/
+
 gulp.task('markdown', function() {
-
-	return gulp.src(path.markdownSrc)
-		.pipe(plumber())
+	gulp.src('_md/**/**.md')
+    .on('error', handleErrors)
 		.pipe(markdown())
-		.pipe(gulp.dest(path.markdownDir))
-		.pipe(browserSync.reload({stream:true}));
-
+		.pipe(rename({
+	    prefix: '_'
+	  }))
+		.pipe(gulp.dest('_html/texts/'))
+		.pipe(reload({stream:true}));
 });
 
 
+/*
+	'html'
+*/
 
-// 'html'
-//
-//	- includes all the HTML files and exports them to root
-//	- concats JS files based on building blocks in HTML
-
-gulp.task('html', function() {
-	
-	return gulp.src(path.htmlSrc)
-		.pipe(plumber())
-  		.pipe(fileinclude())
-		.pipe(gulp.dest(path.htmlDir))
-  		.pipe(browserSync.reload({stream:true}));
-
+gulp.task('html', ['markdown'], function() {
+	gulp.src(['_html/**/**/*.html'])
+    .on('error', handleErrors)
+		.pipe(fileinclude())
+		.pipe(gulp.dest('./dist/'))
+		.pipe(reload({stream:true}));
 });
 
 
-// 'js'
-//
-//	- concat .js files in specific order
-//	- order is defined in the Gulpfile.js (sorry..)
+/*
+	'images'
+*/
 
-gulp.task('js', function(){
-
-	return gulp.src(path.jsSrc)
-		.pipe(order([
-			"vendor/modernizr-2.8.3.min.js",
-			"main.js"
-		]))
-		.pipe(concat("main.js"))
-		.pipe(uglify())
-		.pipe(gulp.dest(path.jsDir))
-  		.pipe(browserSync.reload({stream:true}));
-
+gulp.task('images', function() {
+	gulp.src('_img/*.{png,jpeg,jpg,gif,svg}')
+    .on('error', handleErrors)
+		.pipe(imagemin())
+		.pipe(gulp.dest('./dist/images'))
+    .pipe(reload({stream:true}));
 });
 
 
+/*
+	'scripts'
+*/
 
-//////////////////////////////
-// GULP - GLOBAL TASKS //
-////////////////////////////
+function buildScript(file, watch) {
+  var props = {
+    entries: ['./_js/' + file],
+    debug : true,
+    transform:  [babelify.configure({presets: ['stage-0','es2015'] })]
+  };
 
+  // watchify() if watch requested, otherwise run browserify() once 
+  var bundler = watch ? watchify(browserify(props)) : browserify(props);
 
-// 'watch'
-//
-//	- watches for changes in files
-//	- runs appropriate task when changes are detected
-//	- reloads browserSync
+  function rebundle() {
+    var stream = bundler.bundle();
+    return stream
+      .on('error', handleErrors)
+      .pipe(source(file))
+      .pipe(gulp.dest('./dist/js/'))
+      // If you also want to uglify it
+      .pipe(buffer())
+      .pipe(uglify())
+      .pipe(rename('main.min.js'))
+      .pipe(gulp.dest('./dist/js/'))
+      .pipe(reload({stream:true}))
+  }
 
-gulp.task('watch', ['browser-sync'], function() {
+  // listen for an update and run rebundle
+  bundler.on('update', function() {
+    rebundle();
+    gutil.log('Rebundle...');
+  });
 
-	watch(path.sassSrc, function() { gulp.start('sass'); });
-	watch(path.markdownSrc, function() { gulp.start('markdown'); });
-	watch(path.jsSrc, function() { gulp.start('js'); });
-	watch(path.htmlSrc, function() { gulp.start('html'); });
+  // run it once the first time buildScript is called
+  return rebundle();
+}
 
+gulp.task('scripts', function() {
+  return buildScript('main.js', false); // this will run once because we set watch to false
 });
 
 
-// 'default'
-//
-//	- default set of tasks that are triggered after running 'gulp'
+/*
+	'watch'
+*/
 
-gulp.task('default', ['sass', 'markdown', 'js', 'html', 'watch']);
+gulp.task('default', ['markdown', 'html', 'images', 'styles', 'scripts', 'browser-sync'], function() {
+	gulp.watch('_md/**/**/**/*', ['markdown']);
+  gulp.watch('_html/**/**/**/*', ['html']);
+  gulp.watch('_img/**/**/**/*', ['images']);
+  gulp.watch('_css/**/**/**/*', ['styles']);
+  return buildScript('main.js', true); // browserify watch for JS changes
+});
+

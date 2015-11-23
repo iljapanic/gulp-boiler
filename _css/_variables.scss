@@ -1,0 +1,27 @@
+$green: #26A65B;
+$blue: #3498db;
+$purple: #9b59b6;
+$red: #C0392B;
+
+$brand-primary: $green;
+$brand-secondary: $red;
+
+
+// Base spacing
+$spacing: 1.5em;
+$radius: 6px;
+
+// Media Queries
+$mobile: '(min-width:320px)';   
+$tablet: '(min-width:768px)';     
+$desktop: '(min-width:1024px)';
+$hd: '(min-width:1920px)';
+
+
+// Font fallbacks
+$sans-serif: Helvetica, Arial, "Lucida Grande", sans-serif; // sans-serif fallback
+$serif: Garamond, Georgia, serif; // serif fallback
+
+// Font base
+$font-base: 'Lato';
+$font-header: 'Lato';
