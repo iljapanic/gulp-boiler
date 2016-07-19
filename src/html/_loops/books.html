@@ -1,0 +1,25 @@
+{% for book in books|sort(false, true, 'year') %}
+
+			<article class="item">
+				<a href="{{book.goodreads}}" target="_blank">
+					<img src="img/books/{{book.image}}">
+				</a>
+				<h3 class="item__title">{{book.title}} ({{book.year}})</h3>
+				<ul class="item__links">
+
+					{% if book.goodreads %}
+						<li><a href="{{book.goodreads}}" target="_blank">Goodreads</a></li>
+					{% endif %}
+
+					{% if book.amazon %}
+						<li><a rel="nofollow" target="_blank" href="{{book.amazon}}">Amazon</a><img src="{{book.amazon-img}}" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></li>
+					{% endif %}
+
+					{% if book.web %}
+						<li><a href="{{book.web}}" target="_blank">Web</a></li>
+					{% endif %}
+
+				</ul>
+			</article>
+
+		{% endfor %}

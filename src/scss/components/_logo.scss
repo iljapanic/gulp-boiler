@@ -1,0 +1,19 @@
+.logo {
+
+  margin-bottom: $spacing/3;
+
+  a {
+    color: $primary;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
+
+@media ($media-medium) {
+  .logo {
+    margin-bottom: 0;
+    padding: $spacing/2 2rem;
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "root": {
+    "src": "./src",
+    "dest": "./dist"
+  },
+
+  "tasks": {
+
+    "browserSync": {
+      "server": {
+        "baseDir": "./dist"
+      }
+    },
+
+    "css": {
+      "src": "scss",
+      "dest": "css",
+      "autoprefixer": {
+        "browsers": ["last 3 version"]
+      },
+      "extensions": ["sass", "scss", "css"]
+    },
+
+    "html": {
+      "src": "html",
+      "dest": "./",
+      "dataSrc": "html/_data",
+      "dataGlobal": "global.json",
+      "dataBooks": "books.json",
+      "htmlmin": {
+        "collapseWhitespace": true
+      },
+      "extensions": ["html", "njk", "json"]
+    },
+
+    "images": {
+      "src": "images",
+      "dest": "img",
+      "extensions": ["jpg", "png", "svg", "gif", "jpeg"]
+    },
+
+    "markdown": {
+      "src": "markdown",
+      "dest": "_text",
+      "extensions": ["md", "markdown", "txt"]
+    },
+
+    "scripts": {
+      "src": "javascript",
+      "dest": "js",
+      "extensions": ["js","jsx"]
+    }
+  }
+}

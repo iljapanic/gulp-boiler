@@ -1,0 +1,57 @@
+.hero {
+  display: flex;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 460px;
+  position: relative;
+  z-index: $z-index-0;
+  width: 95%;
+
+  &:after {
+    background-color: rgba($secondary, 0.65);
+    bottom: 0;
+    content: '';
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: $z-index-0;
+  }
+}
+
+.hero--consulting {
+  background-image: url(../img/hero.jpg);
+}
+
+.hero__inner {
+  text-align: center;
+  z-index: $z-index-1;
+}
+
+.hero__quote {
+  border: 0;
+  color: $gray2;
+  font-size: $font-size--large;
+  line-height: 2.8rem;
+  margin: 0;
+  padding: 0;
+}
+
+.hero__quote-author {
+  color: $gray2;
+  font-style: italic;
+  font-weight: 300;
+  margin-top: $spacing/4;
+  opacity: 0.95;
+  text-align: center;
+
+  cite {
+
+  }
+}

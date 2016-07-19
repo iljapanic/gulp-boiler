@@ -1,0 +1,36 @@
+.services {
+  .grid--medium {
+    align-items: center;
+  }
+  .item {
+    margin-bottom: $spacing;
+  }
+  .item__title {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+  .item__icon {
+    img {
+      display: inline-block;
+      vertical-align: middle;
+      width: 86px;
+    }
+  }
+}
+
+@media ($media-medium) {
+  .services {
+    .item {
+      margin-bottom: 0;
+    }
+    .item__title {
+      padding-top: 2.6rem;
+    }
+    .item__icon {
+      padding: $spacing/2;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

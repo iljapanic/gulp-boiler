@@ -1,8 +1,0 @@
-@mixin tint($color, $percent){
-  @return mix(white, $color, $percent);
-}
-
-// Add percentage of black to a color
-@mixin shade($color, $percent){
-  @return mix(black, $color, $percent);
-}

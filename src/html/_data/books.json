@@ -1,0 +1,484 @@
+{
+  "books": [
+    {
+      "name": "The Tyranny of Words",
+      "publication_year": 1938,
+      "cover_image": [
+        {
+          "id": "attCuZ1YAtKoEhszd",
+          "url": "https://dl.airtable.com/CZeRfiLORbO032W7R5Ez_tyranny-of-words.jpg",
+          "filename": "tyranny-of-words.jpg",
+          "size": 40277,
+          "type": "image/jpeg",
+          "thumbnails": {
+            "small": {
+              "url": "https://dl.airtable.com/51G5H5pSqegKxCpWwbEg_small_tyranny-of-words.jpg",
+              "width": 23,
+              "height": 36
+            },
+            "large": {
+              "url": "https://dl.airtable.com/CwEjiZ4KSluybJ5pNhl7_large_tyranny-of-words.jpg",
+              "width": 313,
+              "height": 499
+            }
+          }
+        }
+      ],
+      "goodreads": "https://www.goodreads.com/book/show/2343374.Tyranny_Of_Words",
+      "amazon": "http://www.amazon.com/gp/product/0156923947/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0156923947&linkCode=as2&tag=inforbomb-20&linkId=6J2TPPQLIJTEQCNS",
+      "amazon_img": "http://ir-na.amazon-adsystem.com/e/ir?t=inforbomb-20&l=as2&o=1&a=0156923947"
+    },
+    {
+      "name": "Man's Search for Meaning",
+      "publication_year": 1946,
+      "cover_image": [
+        {
+          "id": "attnXf9kTpca6kyZx",
+          "url": "https://dl.airtable.com/Sy5chEmLT5ed5lAHSoyA_man-search-for-meaning.jpg",
+          "filename": "man-search-for-meaning.jpg",
+          "size": 48013,
+          "type": "image/jpeg",
+          "thumbnails": {
+            "small": {
+              "url": "https://dl.airtable.com/cz0WMrDtS4Wx2FaZfs6F_small_man-search-for-meaning.jpg",
+              "width": 22,
+              "height": 36
+            },
+            "large": {
+              "url": "https://dl.airtable.com/ijqYLDCSz6Mp3Mq88ri5_large_man-search-for-meaning.jpg",
+              "width": 373,
+              "height": 512
+            }
+          }
+        }
+      ],
+      "goodreads": "https://www.goodreads.com/book/show/4069.Man_s_Search_for_Meaning",
+      "amazon": "http://www.amazon.com/gp/product/080701429X/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=080701429X&linkCode=as2&tag=inforbomb-20&linkId=C4AUXGLCLIZ3AJPY",
+      "amazon_img": "http://ir-na.amazon-adsystem.com/e/ir?t=inforbomb-20&l=as2&o=1&a=080701429X"
+    },
+    {
+      "name": "The Last Question",
+      "publication_year": 1956,
+      "cover_image": [
+        {
+          "id": "att5jC7p7HBV85rYg",
+          "url": "https://dl.airtable.com/LFeDShd2QUqKcvF9FiK5_last-question.jpg",
+          "filename": "last-question.jpg",
+          "size": 36706,
+          "type": "image/jpeg",
+          "thumbnails": {
+            "small": {
+              "url": "https://dl.airtable.com/49lQkngaSQ62Jh2MQFjY_small_last-question.jpg",
+              "width": 29,
+              "height": 36
+            },
+            "large": {
+              "url": "https://dl.airtable.com/EHBoV0dHSvmovdJHZd9b_large_last-question.jpg",
+              "width": 407,
+              "height": 500
+            }
+          }
+        }
+      ],
+      "goodreads": "https://www.goodreads.com/book/show/4808763-the-last-question",
+      "website": "http://multivax.com/last_question.html"
+    },
+    {
+      "name": "Brave New World Revisited",
+      "publication_year": 1958,
+      "cover_image": [
+        {
+          "id": "attYzACOgQmt8YGo5",
+          "url": "https://dl.airtable.com/DmCNoHmoRYyJvQIHU397_brave-new-world-revisited.jpg",
+          "filename": "brave-new-world-revisited.jpg",
+          "size": 36804,
+          "type": "image/jpeg",
+          "thumbnails": {
+            "small": {
+              "url": "https://dl.airtable.com/TaM6kQIQT9us8UOTDU4g_small_brave-new-world-revisited.jpg",
+              "width": 24,
+              "height": 36
+            },
+            "large": {
+              "url": "https://dl.airtable.com/zmY6LRqcQMybDXspHWyg_large_brave-new-world-revisited.jpg",
+              "width": 327,
+              "height": 499
+            }
+          }
+        }
+      ],
+      "goodreads": "https://www.goodreads.com/book/show/5481.Brave_New_World_Revisited",
+      "amazon": "http://www.amazon.com/gp/product/0060898526/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0060898526&linkCode=as2&tag=inforbomb-20&linkId=YIJB6WVYTB3YZRGE",
+      "amazon_img": "http://ir-na.amazon-adsystem.com/e/ir?t=inforbomb-20&l=as2&o=1&a=0060898526"
+    },
+    {
+      "name": "Operating Manual For Spaceship Earth",
+      "publication_year": 1969,
+      "cover_image": [
+        {
+          "id": "attbg5gcwdR6JFGxl",
+          "url": "https://dl.airtable.com/rSqsftcRT2eNjathnnpE_operating-manual.jpg",
+          "filename": "operating-manual.jpg",
+          "size": 37987,
+          "type": "image/jpeg",
+          "thumbnails": {
+            "small": {
+              "url": "https://dl.airtable.com/awmdaQ4iTam9PatvZB2D_small_operating-manual.jpg",
+              "width": 23,
+              "height": 36
+            },
+            "large": {
+              "url": "https://dl.airtable.com/3KB0YtpARYCVEtoU4Mjg_large_operating-manual.jpg",
+              "width": 250,
+              "height": 400
+            }
+          }
+        }
+      ],
+      "goodreads": "https://www.goodreads.com/book/show/316362.Operating_Manual_for_Spaceship_Earth",
+      "amazon": "http://www.amazon.com/gp/product/3037781262/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=3037781262&linkCode=as2&tag=inforbomb-20&linkId=AHAKARSAS6PSYOSM",
+      "amazon_img": "http://ir-na.amazon-adsystem.com/e/ir?t=inforbomb-20&l=as2&o=1&a=3037781262"
+    },
+    {
+      "name": "Future Shock",
+      "publication_year": 1971,
+      "cover_image": [
+        {
+          "id": "attFjnkH1raD4Sz4r",
+          "url": "https://dl.airtable.com/LiwCYVLS2SCpCMkL0JT0_future-shock.jpg",
+          "filename": "future-shock.jpg",
+          "size": 59129,
+          "type": "image/jpeg",
+          "thumbnails": {
+            "small": {
+              "url": "https://dl.airtable.com/FzmSkRqwTnigRmr4Z4CE_small_future-shock.jpg",
+              "width": 22,
+              "height": 36
+            },
+            "large": {
+              "url": "https://dl.airtable.com/uQ27ITwHTVmI3PtVrsSg_large_future-shock.jpg",
+              "width": 293,
+              "height": 480
+            }
+          }
+        }
+      ],
+      "goodreads": "https://www.goodreads.com/book/show/466537.Future_Shock",
+      "amazon": "http://www.amazon.com/gp/product/0553277375/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0553277375&linkCode=as2&tag=inforbomb-20&linkId=SFKRXDAQB4HYIJLF",
+      "amazon_img": "http://ir-na.amazon-adsystem.com/e/ir?t=inforbomb-20&l=as2&o=1&a=0553277375"
+    },
+    {
+      "name": "Design For the Real World",
+      "publication_year": 1972,
+      "cover_image": [
+        {
+          "id": "att9nHTn3jEVreEKL",
+          "url": "https://dl.airtable.com/lFU95FBvRSJYBjYIC8Pd_design-for-the-real-world.jpg",
+          "filename": "design-for-the-real-world.jpg",
+          "size": 83119,
+          "type": "image/jpeg",
+          "thumbnails": {
+            "small": {
+              "url": "https://dl.airtable.com/HVgP2z45SpC7NTMHEE8O_small_design-for-the-real-world.jpg",
+              "width": 20,
+              "height": 36
+            },
+            "large": {
+              "url": "https://dl.airtable.com/gr0XhyVCReCdkxhcbvoN_large_design-for-the-real-world.jpg",
+              "width": 270,
+              "height": 475
+            }
+          }
+        }
+      ],
+      "goodreads": "https://www.goodreads.com/book/show/190560.Design_for_the_Real_World",
+      "amazon": "http://www.amazon.com/gp/product/0897331532/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0897331532&linkCode=as2&tag=inforbomb-20&linkId=JYFJKIDGXKUDNHPE",
+      "amazon_img": "http://ir-na.amazon-adsystem.com/e/ir?t=inforbomb-20&l=as2&o=1&a=0897331532"
+    },
+    {
+      "name": "Discipline and Punish",
+      "publication_year": 1975,
+      "cover_image": [
+        {
+          "id": "attBQl7wvntCdRJom",
+          "url": "https://dl.airtable.com/qRs6VYPkRh6R9DLLu7kI_discipline-punish.jpeg",
+          "filename": "discipline-punish.jpeg",
+          "size": 59329,
+          "type": "image/jpeg",
+          "thumbnails": {
+            "small": {
+              "url": "https://dl.airtable.com/AxOzSkUwSSWW6w1bJi1E_small_discipline-punish.jpeg",
+              "width": 22,
+              "height": 36
+            },
+            "large": {
+              "url": "https://dl.airtable.com/9NqLzajSJqkZDSDQBhL7_large_discipline-punish.jpeg",
+              "width": 342,
+              "height": 512
+            }
+          }
+        }
+      ],
+      "goodreads": "https://www.goodreads.com/book/show/80369.Discipline_and_Punish",
+      "amazon": "http://www.amazon.com/gp/product/0679752552/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0679752552&linkCode=as2&tag=inforbomb-20&linkId=VDUHNKHLSEOVLS5I",
+      "amazon_img": "http://ir-na.amazon-adsystem.com/e/ir?t=inforbomb-20&l=as2&o=1&a=0679752552"
+    },
+    {
+      "name": "The Breakdown of Nations",
+      "publication_year": 1978,
+      "cover_image": [
+        {
+          "id": "attjXwHZJoqn7NyyT",
+          "url": "https://dl.airtable.com/pkunbDFhS1GN2xf2O4hX_breakdown-of-nations.jpg",
+          "filename": "breakdown-of-nations.jpg",
+          "size": 39194,
+          "type": "image/jpeg",
+          "thumbnails": {
+            "small": {
+              "url": "https://dl.airtable.com/AnrpuqqOTlYSpiHLTD2Y_small_breakdown-of-nations.jpg",
+              "width": 23,
+              "height": 36
+            },
+            "large": {
+              "url": "https://dl.airtable.com/gKmAULtzSwiU8kqkeZNS_large_breakdown-of-nations.jpg",
+              "width": 319,
+              "height": 499
+            }
+          }
+        }
+      ],
+      "goodreads": "https://www.goodreads.com/book/show/1723464.The_Breakdown_of_Nations",
+      "amazon": "http://www.amazon.com/gp/product/1870098986/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1870098986&linkCode=as2&tag=inforbomb-20&linkId=BC5ZR4AMT2B3XZAW",
+      "amazon_img": "http://ir-na.amazon-adsystem.com/e/ir?t=inforbomb-20&l=as2&o=1&a=1870098986"
+    },
+    {
+      "name": "The Green Imperative",
+      "publication_year": 1995,
+      "cover_image": [
+        {
+          "id": "attF6yugSXrVZTC8O",
+          "url": "https://dl.airtable.com/841HOPHPRsucg4ooMdzj_green-imperative.jpg",
+          "filename": "green-imperative.jpg",
+          "size": 23195,
+          "type": "image/jpeg",
+          "thumbnails": {
+            "small": {
+              "url": "https://dl.airtable.com/QmlKDjTFRt6WaCkt9PqY_small_green-imperative.jpg",
+              "width": 26,
+              "height": 36
+            },
+            "large": {
+              "url": "https://dl.airtable.com/p1yHZphWTLi63kodNQmP_large_green-imperative.jpg",
+              "width": 250,
+              "height": 346
+            }
+          }
+        }
+      ],
+      "goodreads": "https://www.goodreads.com/book/show/894758.The_Green_Imperative",
+      "amazon": "http://www.amazon.com/gp/product/0500278466/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0500278466&linkCode=as2&tag=inforbomb-20&linkId=YT5B2I2CFBELQYI4",
+      "amazon_img": "http://ir-na.amazon-adsystem.com/e/ir?t=inforbomb-20&l=as2&o=1&a=0500278466"
+    },
+    {
+      "name": "The Information Bomb",
+      "publication_year": 2000,
+      "cover_image": [
+        {
+          "id": "attR6zaIH7rAp51MS",
+          "url": "https://dl.airtable.com/9ORbD3oHTHKM95EyUwMg_information-bomb.jpg",
+          "filename": "information-bomb.jpg",
+          "size": 355564,
+          "type": "image/jpeg",
+          "thumbnails": {
+            "small": {
+              "url": "https://dl.airtable.com/7ByBXiZMSJSeKYBAgyAd_small_information-bomb.jpg",
+              "width": 26,
+              "height": 36
+            },
+            "large": {
+              "url": "https://dl.airtable.com/HGmlaSTo2cyYh6pfaP6w_large_information-bomb.jpg",
+              "width": 510,
+              "height": 512
+            }
+          }
+        }
+      ],
+      "goodreads": "https://www.goodreads.com/book/show/203092.The_Information_Bomb",
+      "amazon": "http://www.amazon.com/gp/product/1844670597/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1844670597&linkCode=as2&tag=inforbomb-20&linkId=BH4PLL2QFWPANYV2",
+      "amazon_img": "http://ir-na.amazon-adsystem.com/e/ir?t=inforbomb-20&l=as2&o=1&a=1844670597"
+    },
+    {
+      "name": "Outliers",
+      "publication_year": 2008,
+      "cover_image": [
+        {
+          "id": "atth4HR8ZOc2LUC37",
+          "url": "https://dl.airtable.com/eX7qeNgoTy6leH3btgJQ_outliers.jpg",
+          "filename": "outliers.jpg",
+          "size": 151369,
+          "type": "image/jpeg",
+          "thumbnails": {
+            "small": {
+              "url": "https://dl.airtable.com/S6OrlgkWSCqcjND0kFb5_small_outliers.jpg",
+              "width": 24,
+              "height": 36
+            },
+            "large": {
+              "url": "https://dl.airtable.com/caL9jcU3QC2zAuQZOTsI_large_outliers.jpg",
+              "width": 512,
+              "height": 512
+            }
+          }
+        }
+      ],
+      "goodreads": "https://www.goodreads.com/book/show/3228917-outliers",
+      "amazon": "http://www.amazon.com/gp/product/0316017930/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0316017930&linkCode=as2&tag=inforbomb-20&linkId=MS6RCMJKLOHMYIUY",
+      "amazon_img": "http://ir-na.amazon-adsystem.com/e/ir?t=inforbomb-20&l=as2&o=1&a=0316017930"
+    },
+    {
+      "name": "Rework",
+      "publication_year": 2010,
+      "cover_image": [
+        {
+          "id": "attWqbIsiGzg5vIHA",
+          "url": "https://dl.airtable.com/7afIncYZQ5C2MW0z58Wc_rework.jpg",
+          "filename": "rework.jpg",
+          "size": 23185,
+          "type": "image/jpeg",
+          "thumbnails": {
+            "small": {
+              "url": "https://dl.airtable.com/BMQG8oj9SIu7yy0OHdci_small_rework.jpg",
+              "width": 24,
+              "height": 36
+            },
+            "large": {
+              "url": "https://dl.airtable.com/GqU0efbdSwSim8ZBj0Qp_large_rework.jpg",
+              "width": 301,
+              "height": 450
+            }
+          }
+        }
+      ],
+      "goodreads": "https://www.goodreads.com/book/show/6732019-rework",
+      "amazon": "http://www.amazon.com/gp/product/0307463745/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0307463745&linkCode=as2&tag=inforbomb-20&linkId=MWS3OUKGLSZJKK2V",
+      "amazon_img": "http://ir-na.amazon-adsystem.com/e/ir?t=inforbomb-20&l=as2&o=1&a=0307463745",
+      "website": "https://37signals.com/rework"
+    },
+    {
+      "name": "The Information Diet",
+      "publication_year": 2011,
+      "cover_image": [
+        {
+          "id": "attJGWOVrqguDT6jQ",
+          "url": "https://dl.airtable.com/VRs8wu2hQFuq0Ouc13gg_information-diet.jpg",
+          "filename": "information-diet.jpg",
+          "size": 43974,
+          "type": "image/jpeg",
+          "thumbnails": {
+            "small": {
+              "url": "https://dl.airtable.com/nrVvrwvKQYWsa60Cf1rA_small_information-diet.jpg",
+              "width": 24,
+              "height": 36
+            },
+            "large": {
+              "url": "https://dl.airtable.com/LA9iPAknS3mTnoskOKVt_large_information-diet.jpg",
+              "width": 333,
+              "height": 499
+            }
+          }
+        }
+      ],
+      "goodreads": "https://www.goodreads.com/book/show/12799077-the-information-diet",
+      "amazon": "http://www.amazon.com/gp/product/1491933399/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1491933399&linkCode=as2&tag=inforbomb-20&linkId=HPCYEHJDGROLWLAW",
+      "amazon_img": "http://ir-na.amazon-adsystem.com/e/ir?t=inforbomb-20&l=as2&o=1&a=1491933399",
+      "website": "http://www.informationdiet.com/"
+    },
+    {
+      "name": "Designing for Emotion",
+      "publication_year": 2011,
+      "cover_image": [
+        {
+          "id": "attIRAUZPFO6UZmhE",
+          "url": "https://dl.airtable.com/fL8I7ETbRC2JX4MT1XjI_designing-for-emotion.jpg",
+          "filename": "designing-for-emotion.jpg",
+          "size": 65987,
+          "type": "image/jpeg",
+          "thumbnails": {
+            "small": {
+              "url": "https://dl.airtable.com/E8fzdXcQHyOUhiisDmw1_small_designing-for-emotion.jpg",
+              "width": 25,
+              "height": 36
+            },
+            "large": {
+              "url": "https://dl.airtable.com/w8LVDZR5C2EVQN9Rjxzg_large_designing-for-emotion.jpg",
+              "width": 431,
+              "height": 512
+            }
+          }
+        }
+      ],
+      "goodreads": "https://www.goodreads.com/book/show/12910715-designing-for-emotion",
+      "amazon": "http://www.amazon.com/gp/product/1937557006/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1937557006&linkCode=as2&tag=inforbomb-20&linkId=ANLYH2YXXEH3DEFI",
+      "amazon_img": "http://ir-na.amazon-adsystem.com/e/ir?t=inforbomb-20&l=as2&o=1&a=1937557006",
+      "website": "https://abookapart.com/products/designing-for-emotion"
+    },
+    {
+      "name": "Intertwingled",
+      "publication_year": 2014,
+      "cover_image": [
+        {
+          "id": "attMcM6duvZPXiqml",
+          "url": "https://dl.airtable.com/Bhpa8Zi3RoGF7obZiVZz_intertwingled.jpg",
+          "filename": "intertwingled.jpg",
+          "size": 13351,
+          "type": "image/jpeg",
+          "thumbnails": {
+            "small": {
+              "url": "https://dl.airtable.com/WCWN8smtRPGxI1w6f9mZ_small_intertwingled.jpg",
+              "width": 24,
+              "height": 36
+            },
+            "large": {
+              "url": "https://dl.airtable.com/RzRLW8E2QlyqKTb4Jjhy_large_intertwingled.jpg",
+              "width": 231,
+              "height": 346
+            }
+          }
+        }
+      ],
+      "goodreads": "https://www.goodreads.com/book/show/22931460-intertwingled",
+      "amazon": "http://www.amazon.com/gp/product/0692225587/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0692225587&linkCode=as2&tag=inforbomb-20&linkId=TJWSZBXTPWHCLKW2",
+      "amazon_img": "http://ir-na.amazon-adsystem.com/e/ir?t=inforbomb-20&l=as2&o=1&a=0692225587",
+      "website": "http://intertwingled.org/"
+    },
+    {
+      "name": "The Best Interface Is No Interface",
+      "publication_year": 2015,
+      "cover_image": [
+        {
+          "id": "attxuQhrZGa7QAkO9",
+          "url": "https://dl.airtable.com/Uj4xeU92TKm5f1DvnvTT_best-interface-no-interface.jpg",
+          "filename": "best-interface-no-interface.jpg",
+          "size": 10514,
+          "type": "image/jpeg",
+          "thumbnails": {
+            "small": {
+              "url": "https://dl.airtable.com/oV4kE6PcS2yZT4zpdeL4_small_best-interface-no-interface.jpg",
+              "width": 24,
+              "height": 36
+            },
+            "large": {
+              "url": "https://dl.airtable.com/WOatgevT2KW9IHegi83Q_large_best-interface-no-interface.jpg",
+              "width": 333,
+              "height": 499
+            }
+          }
+        }
+      ],
+      "goodreads": "https://www.goodreads.com/book/show/22758923-the-best-interface-is-no-interface",
+      "amazon": "http://www.amazon.com/gp/product/0133890333/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0133890333&linkCode=as2&tag=inforbomb-20&linkId=KDZV2X5OZOS364FW",
+      "amazon_img": "http://ir-na.amazon-adsystem.com/e/ir?t=inforbomb-20&l=as2&o=1&a=0133890333",
+      "website": "http://www.nointerface.com/book/"
+    }
+  ]
+}

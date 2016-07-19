@@ -1,0 +1,19 @@
+.header {
+  margin: 0 auto;
+  max-width: $wrapper;
+  padding: $spacing 2rem $spacing/2 2rem;
+  font-family: $heading-font;
+}
+
+@media($media-medium) {
+  .header {
+    .logo {
+      float: left;
+      width: percentage(1/4);
+    }
+    .main-nav {
+      float: left;
+      width: percentage(3/4);
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "site": {
+    "title": "Infomatics",
+    "author": "Ilja Panic",
+    "description": "Infomatics consulting",
+    "stylesheet": "./css/style.css"
+  },
+  "consulting" : {
+    "icon_size": "64",
+    "icon_color": "#efeff0",
+    "icon_stroke": "1"
+  }
+}

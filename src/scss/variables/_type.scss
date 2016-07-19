@@ -1,0 +1,21 @@
+// Font based variables
+//
+// Styleguide
+
+$base-font:       'Adelle W01', 'Avenir W01', 'Avenir Next','Helvetica Neue','Segoe UI', 'Verdana', sans-serif !default;
+$heading-font:    'Adelle Sans W01', 'Leitura News W01', serif;
+$monospace-font:  'Consolas', 'Monaco', 'Courier New', monospace !default;
+
+$heading:         $heading-font !default;
+$body:            $base-font !default;
+$monospace:       $monospace-font !default;
+
+$font-size: 1.4rem !default;
+$line-height: 2.4rem !default;
+$font-weight-base: 200;
+$font-weight-bold: 300;
+
+$font-size--small: 1.3rem !default;
+$font-size--large: 2rem !default;
+
+$spacing: $line-height;

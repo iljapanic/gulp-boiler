@@ -1,0 +1,15 @@
+{% macro active(activePage) %}
+<div class="logo">
+  <a class="{%if activePage == 'home' %}active{% endif %}" href="/">
+    <span>Infomatics</span>
+  </a>
+</div>
+
+<nav class="main-nav" role="navigation">
+  <ul>
+    <li class="{%if activePage == 'consulting' %}active{% endif %}"><a href="/consulting">Consulting</a></li>
+    <li class="{%if activePage == 'mentoring' %}active{% endif %}"><a href="/mentoring">Mentoring</a></li>
+    <li class="{%if activePage == 'about' %}active{% endif %}"><a href="/about">About</a></li>
+  </ul>
+</nav>
+{% endmacro %}

@@ -1,0 +1,83 @@
+.footer {
+  background-color: $gray1;
+  color: $gray4;
+  margin-top: $spacing*3;
+  padding: $spacing 2rem $spacing/2 2rem;
+
+  a {
+    border-bottom: 1px dashed $primary;
+    color: $gray4;
+    padding-bottom: 2px;
+    &:hover {
+      border-bottom-style: solid;
+      color: $gray6;
+    }
+  }
+}
+
+.footer__title {
+  font-size: $font-size--large;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.colophon {
+  color: $gray3;
+  font-size: $font-size--small;
+  margin-top: $spacing/2;
+}
+
+.contact {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    margin-bottom: $spacing/2;
+  }
+
+  svg {
+    margin-right: $spacing/8;
+    padding-bottom: 4px;
+    vertical-align: middle;
+  }
+
+  @include svg-selector {
+    fill: $gray4;
+  }
+}
+
+.social {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    display: inline-block;
+    margin-right: $spacing/1.25;
+    vertical-align: middle;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  svg {
+    vertical-align: top;
+  }
+
+  @include svg-selector {
+    fill: $gray6;
+  }
+
+  a {
+    border: 0;
+  }
+
+  a:hover {
+    @include svg-selector {
+      fill: $primary-dark;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.frontpage__links {
+
+
+  .grid--medium {
+    align-items: center;
+  }
+
+  .item__title {
+    padding-bottom: 0;
+  }
+
+  .item__title a {
+    color: $gray2;
+    text-transform: uppercase;
+    &:hover {
+      color: $primary;
+    }
+  }
+
+  .item__icon {
+    img {
+      display: inline-block;
+      width: 112px;
+    }
+  }
+
+  p {
+    padding-bottom: 0;
+  }
+
+  .read-more {
+    font-family: $heading-font;
+    font-size: $font-size--small;
+    font-weight: $font-weight-bold;
+    text-transform: uppercase;
+  }
+}
